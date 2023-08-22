@@ -22,17 +22,11 @@
 auto chicken_rabbit(int heads, int legs)
 {
     if (heads * 2 == legs)
-    {
         return heads;
-    }
     else if (heads * 4 == legs)
-    {
         return 0;
-    }
     else
-    {
         return chicken_rabbit(heads - 1, legs - 4);
-    }
 }
 
 int main(int argc, char const *argv[])
