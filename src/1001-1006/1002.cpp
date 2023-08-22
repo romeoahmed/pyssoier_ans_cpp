@@ -19,8 +19,7 @@
 int main(int argc, char const *argv[])
 {
     auto i = 0, j = 0;
-    std::cin >> i;
-    std::cin >> j;
+    std::cin >> i >> j;
     std::cout << i + j << std::endl;
     
     return 0;
