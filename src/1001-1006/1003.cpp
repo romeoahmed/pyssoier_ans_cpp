@@ -14,14 +14,6 @@
 * limitations under the License.
 */
 
-/*
-* @File    :   1003.cpp
-* @Time    :   2023/08/22 18:05:21
-* @Author  :   romeoahmed 
-* @Version :   1.0
-* @Desc    :   None
-*/
-
 #include <iostream>
 #include <iomanip>
 

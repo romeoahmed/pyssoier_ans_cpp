@@ -14,14 +14,6 @@
 * limitations under the License.
 */
 
-/*
-* @File    :   1005.cpp
-* @Time    :   2023/08/22 18:05:37
-* @Author  :   romeoahmed 
-* @Version :   1.0
-* @Desc    :   None
-*/
-
 #include <iostream>
 
 int main(int argc, char const *argv[])
