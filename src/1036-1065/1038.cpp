@@ -14,27 +14,17 @@
  * limitations under the License.
  */
 
-#include <map>
 #include <iostream>
 #include <iomanip>
 
 int main(int argc, char const *argv[])
 {
-    auto l = 0, h = 0;
-    std::map<int, double> temperature;
-    std::cin >> l >> h;
-
-    for (auto i = l; i < h; i++)
-    {
-        temperature[i] = (i - 32) * 5.0 / 9.0;
-    }
-
+    constexpr auto l = 100, h = 105;
     std::cout.setf(std::ios::right);
-    for (std::map<int, double>::const_iterator iter = temperature.begin(); 
-         iter != temperature.end(); ++iter)
+    for (auto i = l; i <= h; i++)
     {
-        std::cout << std::setw(8) << iter->first << std::setw(10) 
-                  << std::fixed << std::setprecision(2) << iter->second << std::endl;
+        std::cout << std::setw(8) << i << std::setw(10) 
+                  << std::fixed << std::setprecision(2) << (i - 32) * 5.0 / 9.0 << std::endl;
     }
 
     return 0;

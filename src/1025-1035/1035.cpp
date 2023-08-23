@@ -16,7 +16,7 @@
 
 #include <iostream>
 
-auto buyNotes(const int x, int &m, int &n, int &k)
+inline auto buyNotes(const int x, int &m, int &n, int &k)
 {
     k = x / 4;
     auto r = x % 4;      // remainder

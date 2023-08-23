@@ -16,22 +16,11 @@
 
 #include <iostream>
 
-/*
-* Swap two variables
-*/
-template <typename T>
-void swap(T &a, T &b)
-{
-    auto tmp = a;
-    a = b;
-    b = tmp;
-}
-
 int main(int argc, char const *argv[])
 {
     auto a = 0, b = 0;
     std::cin >> a >> b;
-    swap(a, b);
+    std::swap(a, b);
     std::cout << "a = " << a << std::endl;
     std::cout << "b = " << b << std::endl;
     

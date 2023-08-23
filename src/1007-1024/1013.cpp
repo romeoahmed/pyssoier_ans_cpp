@@ -17,8 +17,8 @@
 #include <iostream>
 
 /*
-* Return the number of chickens
-*/
+ * Return the number of chickens
+ */
 auto chicken_rabbit(int heads, int legs)
 {
     if (heads * 2 == legs)

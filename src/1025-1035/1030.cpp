@@ -16,7 +16,7 @@
 
 #include <iostream>
 
-auto isLeapYear(const int year)
+inline auto isLeapYear(const int year)
 {
     return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
 }
