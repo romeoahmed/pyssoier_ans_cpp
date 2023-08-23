@@ -36,8 +36,7 @@ int main(int argc, char const *argv[])
     }
 
     std::cout.setf(std::ios::right);
-    for (std::map<int, double>::const_iterator iter = temperature.begin(); 
-         iter != temperature.end(); ++iter)
+    for (auto iter = temperature.cbegin(); iter != temperature.cend(); ++iter)
     {
         std::cout << std::setw(8) << iter->first << std::setw(10) 
                   << std::fixed << std::setprecision(2) << iter->second << std::endl;
