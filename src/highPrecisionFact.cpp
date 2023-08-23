@@ -22,23 +22,27 @@ int main(int argc, char const *argv[])
     constexpr int n = 100;
     std::vector<short> result;
     result.emplace_back(1);
-    for (int i = 2; i <= n; ++i) {
-        int carry = 0;
-        for (auto &digit : result) {
-            int tmp = digit * i + carry;
+    for (auto i = 2; i <= n; ++i)
+    {
+        auto carry = 0;
+        for (auto &digit : result)
+        {
+            auto tmp = digit * i + carry;
             digit = tmp % 10;
             carry = tmp / 10;
         }
-        while (carry > 0) {
+        while (carry > 0)
+        {
             result.emplace_back(carry % 10);
             carry /= 10;
         }
     }
     std::cout << n << "! = ";
-    for (auto iter = result.rbegin(); iter != result.rend(); ++iter) {
+    for (auto iter = result.crbegin(); iter != result.crend(); ++iter)
+    {
         std::cout << *iter;
     }
     std::cout << std::endl;
-    
+
     return 0;
 }
