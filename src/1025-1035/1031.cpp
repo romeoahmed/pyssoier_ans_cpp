@@ -39,6 +39,7 @@ int main(int argc, char const *argv[])
     double heartRate = 0;
     std::string gender;
     std::cin >> age >> heartRate >> gender;
+    
     const auto minHeartRate = calcMinHeartRate(age, heartRate, gender);
     const auto maxHeartRate = calcMaxHeartRate(age, heartRate, gender);
     std::cout << minHeartRate << '~' << maxHeartRate << std::endl;
