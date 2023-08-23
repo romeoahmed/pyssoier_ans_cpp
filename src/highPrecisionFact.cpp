@@ -20,7 +20,7 @@
 int main(int argc, char const *argv[])
 {
     constexpr int n = 100;
-    std::vector<short> result;
+    std::vector<int> result;
     result.emplace_back(1);
     for (auto i = 2; i <= n; ++i)
     {
