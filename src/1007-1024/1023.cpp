@@ -48,7 +48,7 @@ int main(int argc, char const *argv[])
         }
     }
 
-    for (auto candy : candies)
+    for (const auto candy : candies)
         std::cout << std::setw(5) << candy;
     std::cout << std::endl;
 
