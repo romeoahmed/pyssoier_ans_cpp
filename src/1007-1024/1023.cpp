@@ -17,23 +17,24 @@
 #include <array>
 #include <iostream>
 #include <iomanip>
-#define LENGTH 5
 
 int main(int argc, char const *argv[])
 {
-    std::array<int, LENGTH> candies{};
+    constexpr auto length = 5;
+    
+    std::array<int, length> candies{};
     for (auto &candy : candies)
         std::cin >> candy;
     
-    for (int i = 0; i < LENGTH; i++)
+    for (int i = 0; i < length; i++)
     {
         if (i == 0)
         {
             candies[i] /= 3;
-            candies[LENGTH - 1] += candies[i];
+            candies[length - 1] += candies[i];
             candies[i + 1] += candies[i];
         }
-        else if (i == LENGTH - 1)
+        else if (i == length - 1)
         {
             candies[i] /= 3;
             candies[0] += candies[i];

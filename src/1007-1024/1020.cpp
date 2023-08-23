@@ -18,7 +18,7 @@
 
 int main(int argc, char const *argv[])
 {
-    auto c = 'A';
-    std::cout << (int)c * 2 << std::endl;
+    constexpr auto c = (int)'A';
+    std::cout << c * 2 << std::endl;
     return 0;
 }

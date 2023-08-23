@@ -34,8 +34,8 @@ int main(int argc, char const *argv[])
     auto x = 0, y = 0;
     std::cin >> x >> y;
 
-    auto chicken = chicken_rabbit(x, y);
-    auto rabbit = x - chicken;
+    const auto chicken = chicken_rabbit(x, y);
+    const auto rabbit = x - chicken;
     std::cout << chicken << " " << rabbit << std::endl;
 
     return 0;

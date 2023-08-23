@@ -21,7 +21,7 @@ int main(int argc, char const *argv[])
 {
     auto n = 0, m = 0;
     std::cin >> n >> m;
-    auto rest = n - m * 0.8;
+    const auto rest = n - m * 0.8;
     std::cout << std::fixed << std::setprecision(2) << rest << std::endl;
 
     return 0;

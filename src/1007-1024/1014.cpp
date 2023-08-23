@@ -21,7 +21,7 @@ int main(int argc, char const *argv[])
 {
     auto x = 0, y = 0;
     std::cin >> x >> y;
-    double average = (x * 87 + y * 85) / (x + y);
+    const double average = (x * 87 + y * 85) / (x + y);
     std::cout << std::fixed << std::setprecision(4) << average << std::endl;
 
     return 0;

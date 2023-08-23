@@ -17,14 +17,14 @@
 #include <cmath>
 #include <iostream>
 
-auto isPrime(int n)
+auto isPrime(const int n)
 {
-    if (n == 2 or n == 3)
+    if (n == 2 || n == 3)
         return true;
-    else if (n % 6 != 1 and n % 6 != 5)
+    else if (n % 6 != 1 && n % 6 != 5)
         return false;
     for (int i = 5; i <= std::sqrt(n); i += 6)
-        if (n % i == 0 or n % (i + 2) == 0)
+        if (n % i == 0 || n % (i + 2) == 0)
             return false;
     return true;
 }

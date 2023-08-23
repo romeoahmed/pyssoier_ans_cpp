@@ -19,13 +19,13 @@
 
 int main(int argc, char const *argv[])
 {
-    auto pi = 3.14159;
+    constexpr auto pi = 3.14159;
     double radius = 0;
     std::cin >> radius;
 
-    auto diameter = 2 * radius;
-    auto circumference = 2 * pi * radius;
-    auto area = pi * radius * radius;
+    const auto diameter = 2 * radius;
+    const auto circumference = 2 * pi * radius;
+    const auto area = pi * radius * radius;
     std::cout << std::fixed << std::setprecision(4)
               << diameter << " "
               << circumference << " "

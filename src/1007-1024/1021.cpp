@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
 {
     auto homeworkScore = 0, quizScore = 0, examScore = 0;
     std::cin >> homeworkScore >> quizScore >> examScore;
-    auto finalScore = homeworkScore * 0.2 + quizScore * 0.3 + examScore * 0.5;
+    const auto finalScore = homeworkScore * 0.2 + quizScore * 0.3 + examScore * 0.5;
     std::cout << finalScore << std::endl;
     
     return 0;

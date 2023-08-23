@@ -23,7 +23,7 @@ int main(int argc, char const *argv[])
     * 20y - (15 * 20)x = 10y - (20 * 10)x
     * => y / x = (15 * 20-20 * 10) / (20 - 10)
     */
-    auto day = (15 * 20 - 20 * 10) / (20 - 10);
+    constexpr auto day = (15 * 20 - 20 * 10) / (20 - 10);
     std::cout << day << std::endl;
 
     return 0;
