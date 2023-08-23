@@ -17,7 +17,7 @@
 #include <iostream>
 #include <string>
 
-auto isSubStr(const std::string& subStr, const std::string& originStr)
+auto isSubStr(const std::string &subStr, const std::string &originStr)
 {
     if (subStr.size() > originStr.size())
         return false;

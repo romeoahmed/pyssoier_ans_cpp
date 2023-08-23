@@ -17,7 +17,7 @@
 #include <iostream>
 #include <string>
 
-inline auto calcMinHeartRate(const int age, const double heartRate, const std::string& gender)
+inline auto calcMinHeartRate(const int age, const double heartRate, const std::string &gender)
 {
     if (gender == "male")
         return (220 - age - heartRate) * 0.6 + heartRate;
@@ -25,7 +25,7 @@ inline auto calcMinHeartRate(const int age, const double heartRate, const std::s
         return (210 - age - heartRate) * 0.6 + heartRate;
 }
 
-inline auto calcMaxHeartRate(const int age, const double heartRate, const std::string& gender)
+inline auto calcMaxHeartRate(const int age, const double heartRate, const std::string &gender)
 {
     if (gender == "male")
         return (220 - age - heartRate) * 0.8 + heartRate;
