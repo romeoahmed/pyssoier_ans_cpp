@@ -9,4 +9,4 @@ You can get the source code in the **src** folder.
 - [1079-1093](https://github.com/romeoahmed/pyssoier_answer_cpp/tree/main/src/1079-1093)
 - [1094-1108](https://github.com/romeoahmed/pyssoier_answer_cpp/tree/main/src/1094-1108)
   
-This project is licensed under the terms of the **Apache-2.0** license.
+This project is licensed under the terms of the **MIT** license.
