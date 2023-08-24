@@ -11,13 +11,13 @@ int main(int argc, char const *argv[])
     std::cin >> n;
 
     std::cout << n << "=";
-    auto mark = true;
+    auto flag = true;
     for (auto i = 2; i <= n; i++)
     {
         while (n % i == 0)
         {
-            if (mark)
-                mark = false;
+            if (flag)
+                flag = false;
             else
                 std::cout << "*";
             std::cout << i;

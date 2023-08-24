@@ -12,15 +12,11 @@
 int main(int argc, char const *argv[])
 {
     std::vector<int> nums;
-    auto n = 0;
     
-    while (std::cin >> n)
+    for (auto tmp = 0; std::cin >> tmp; nums.emplace_back(tmp))
     {
-        nums.emplace_back(n);
         if (std::cin.get() == '\n')
-        {
             break;
-        }
     }
 
     const auto minNum = *std::min_element(nums.cbegin(), nums.cend());
