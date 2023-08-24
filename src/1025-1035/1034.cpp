@@ -6,7 +6,7 @@
 #include <cmath>
 #include <iostream>
 #include <iomanip>
-#include <string>
+#include <string_view>
 
 int main(int argc, char const *argv[])
 {
@@ -14,7 +14,7 @@ int main(int argc, char const *argv[])
     std::cin >> t;
 
     const auto v = 25000 * 3.6 / t;
-    std::string status;
+    std::string_view status;
     
     if (v > 100 && v < 120)
         status = "超过规定时速且不足20%";

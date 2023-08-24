@@ -5,7 +5,7 @@
 
 #include <iostream>
 #include <iomanip>
-#include <string>
+#include <string_view>
 
 int main(int argc, char const *argv[])
 {
@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
     std::cin >> height >> weight;
     
     const auto bmi = weight / (height * height);
-    std::string status;
+    std::string_view status;
     if (bmi < 18.5)
         status = "偏瘦";
     else if (bmi >= 18.5 && bmi < 25)
