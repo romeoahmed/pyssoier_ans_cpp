@@ -5,20 +5,14 @@
 
 #include <iostream>
 
-auto fact(long long n, long long a = 1)
+auto fact(int n, long long a = 1)
 {
     if (n == 0)
-    {
         return 1LL;
-    }
     else if (n == 1)
-    {
         return a;
-    }
     else
-    {
         return fact(n - 1, a * n);
-    }
 }
 
 int main(int argc, char const *argv[])
