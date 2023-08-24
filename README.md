@@ -5,7 +5,7 @@ You can get the source code in the **src** folder.
 - [1007-1024](https://github.com/romeoahmed/pyssoier_answer_cpp/tree/main/src/1007-1024)
 - [1025-1035](https://github.com/romeoahmed/pyssoier_answer_cpp/tree/main/src/1025-1035)
 - [1036-1065](https://github.com/romeoahmed/pyssoier_answer_cpp/tree/main/src/1036-1065)
-    > 1048.cpp works fine on my computer, but on pyssoier it shows **Wrong Answer**.  
+    > [1048.cpp](https://github.com/romeoahmed/pyssoier_answer_cpp/tree/main/src/1036-1065/1048.cpp) works fine on my computer, but on pyssoier it shows **Wrong Answer**.  
     > If you know why, please tell me. Thanks.
 - [1066-1078](https://github.com/romeoahmed/pyssoier_answer_cpp/tree/main/src/1066-1078)
 - [1079-1093](https://github.com/romeoahmed/pyssoier_answer_cpp/tree/main/src/1079-1093)
