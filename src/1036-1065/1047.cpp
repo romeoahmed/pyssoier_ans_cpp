@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
         sum += next;
         next += 5;
     }
-    std::cout << who << std::endl;
 
+    std::cout << who << std::endl;
     return 0;
 }

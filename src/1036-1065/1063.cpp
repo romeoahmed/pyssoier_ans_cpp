@@ -22,6 +22,7 @@ int main(int argc, char const *argv[])
 {
     auto a = 0, b = 0;
     std::cin >> a >> b;
+    
     for (int i = a; i <= b; i++)
         if (isPrime(i))
             std::cout << i << std::endl;

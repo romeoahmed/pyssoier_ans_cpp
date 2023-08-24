@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
     {
         sum += i;
     }
+
     std::cout << sum << std::endl;
-    
     return 0;
 }

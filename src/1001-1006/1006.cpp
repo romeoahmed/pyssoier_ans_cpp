@@ -11,7 +11,7 @@ int main(int argc, char const *argv[])
     constexpr auto a = 15, b = 25;
     constexpr auto h = 150 * 2 / a;
     constexpr double s = (a + b) * h / 2;
-    std::cout << std::fixed << std::setprecision(2) << s << std::endl;
 
+    std::cout << std::fixed << std::setprecision(2) << s << std::endl;
     return 0;
 }

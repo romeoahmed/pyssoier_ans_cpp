@@ -10,7 +10,7 @@ int main(int argc, char const *argv[])
 {
     double a = 0, b = 0, c = 0;
     std::cin >> a >> b >> c;
-    std::cout << std::max({a, b, c}) << std::endl;
 
+    std::cout << std::max({a, b, c}) << std::endl;
     return 0;
 }

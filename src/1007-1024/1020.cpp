@@ -9,5 +9,6 @@ int main(int argc, char const *argv[])
 {
     constexpr auto c = static_cast<int>('A');
     std::cout << c * 2 << std::endl;
+    
     return 0;
 }

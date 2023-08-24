@@ -9,6 +9,7 @@ int main(int argc, char const *argv[])
 {
     auto correctNum = 0, guessNum = 0;
     std::cin >> correctNum;
+    
     while (std::cin >> guessNum)
     {
         if (guessNum == correctNum)

@@ -14,6 +14,7 @@ int main(int argc, char const *argv[])
 {
     auto year = 0;
     std::cin >> year;
+    
     if (isLeapYear(year))
         std::cout << year << "年是闰年" << std::endl;
     else

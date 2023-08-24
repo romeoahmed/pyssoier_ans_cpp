@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
         money += money * 0.037;
         money -= 20000;
     }
+
     std::cout << year << std::endl;
-    
     return 0;
 }

@@ -14,13 +14,14 @@ int main(int argc, char const *argv[])
 {
     auto num = 0, reversedNum = 0;
     std::cin >> num;
+    
     while (num != 0)
     {
         reversedNum *= 10;
         reversedNum += num % 10;
         num /= 10;
     }
+
     std::cout << reversedNum << std::endl;
-    
     return 0;
 }

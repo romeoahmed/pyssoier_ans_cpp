@@ -9,9 +9,10 @@ int main(int argc, char const *argv[])
 {
     auto m = 0, n = 1;
     std::cin >> m;
+    
     for (int sum = 0; sum <= m; sum += n)
         n++;
-    std::cout << n << std::endl;
 
+    std::cout << n << std::endl;
     return 0;
 }

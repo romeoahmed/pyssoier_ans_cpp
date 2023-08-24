@@ -12,9 +12,10 @@ int main(int argc, char const *argv[])
 {
     auto t = 0;
     std::cin >> t;
+
     const auto v = 25000 * 3.6 / t;
     std::string status;
-
+    
     if (v > 100 && v < 120)
         status = "超过规定时速且不足20%";
     else if (v >= 120 && v < 150)

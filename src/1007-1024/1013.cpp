@@ -8,7 +8,7 @@
 /*
  * Return the number of chickens
  */
-auto chicken_rabbit(int heads, int legs)
+auto chicken_rabbit(const int heads, const int legs)
 {
     if (heads * 2 == legs)
         return heads;

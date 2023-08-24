@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
         sum += tmp;
         sum %= 1000000;
     }
-    std::cout << sum << std::endl;
 
+    std::cout << sum << std::endl;
     return 0;
 }

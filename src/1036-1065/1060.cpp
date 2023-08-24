@@ -6,7 +6,7 @@
 #include <cmath>
 #include <iostream>
 
-auto isSquareNum(int n)
+auto isSquareNum(const int n)
 {
     auto root = std::sqrt(n);
     return root == std::floor(root);

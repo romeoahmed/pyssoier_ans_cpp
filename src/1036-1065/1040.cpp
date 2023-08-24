@@ -6,7 +6,7 @@
 #include <iostream>
 #include <iomanip>
 
-constexpr inline auto wallis(int n)
+constexpr inline auto wallis(const int n)
 {
     auto halfPi = 1.0;
     for (auto i = 2; i <= n; i += 2)

@@ -21,6 +21,7 @@ int main(int argc, char const *argv[])
 {
     auto n = 0;
     std::cin >> n;
+    
     const auto fare = calcFare(n);
     std::cout << "票价" << fare << "元" << std::endl;
     

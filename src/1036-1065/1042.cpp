@@ -9,6 +9,7 @@ int main(int argc, char const *argv[])
 {
     auto n = 0;
     std::cin >> n;
+    
     for (auto i = 2; i <= n; i += 2)
     {
         std::cout << i << " ";

@@ -19,21 +19,21 @@ int main(int argc, char const *argv[])
     {
         if (i == 0)
         {
-            candies[i] /= 3;
-            candies[length - 1] += candies[i];
-            candies[i + 1] += candies[i];
+            candies.at(i) /= 3;
+            candies.at(length - 1) += candies.at(i);
+            candies.at(i + 1) += candies.at(i);
         }
         else if (i == length - 1)
         {
-            candies[i] /= 3;
-            candies[0] += candies[i];
-            candies[i - 1] += candies[i];
+            candies.at(i) /= 3;
+            candies.at(i - 1) += candies.at(i);
+            candies.at(0) += candies.at(i);
         }
         else
         {
-            candies[i] /= 3;
-            candies[i + 1] += candies[i];
-            candies[i - 1] += candies[i];
+            candies.at(i) /= 3;
+            candies.at(i - 1) += candies.at(i);
+            candies.at(i + 1) += candies.at(i);
         }
     }
 

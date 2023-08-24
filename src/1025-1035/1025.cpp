@@ -21,6 +21,5 @@ int main(int argc, char const *argv[])
         m = s * p;
     
     std::cout << std::fixed << std::setprecision(1) << m << std::endl;
-
     return 0;
 }

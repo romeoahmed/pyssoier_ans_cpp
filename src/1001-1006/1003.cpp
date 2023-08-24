@@ -10,6 +10,7 @@ int main(int argc, char const *argv[])
 {
     double f = 0;
     std::cin >> f;
+    
     const auto c = (f - 32) * 5 / 9;
     std::cout << std::fixed << std::setprecision(2) << c << std::endl;
 

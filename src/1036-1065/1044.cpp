@@ -5,7 +5,7 @@
 
 #include <iostream>
 
-auto fact(int n, long long a = 1)
+auto fact(const int n, const long long a = 1)
 {
     if (n == 0)
         return 1LL;
@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
 {
     auto n = 0;
     std::cin >> n;
+
     std::cout << fact(n) << std::endl;
-    
     return 0;
 }

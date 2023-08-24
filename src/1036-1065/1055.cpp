@@ -16,7 +16,7 @@ int main(int argc, char const *argv[])
         n += 1;
         sum += 1.0 / n;
     }
-    std::cout << n << std::endl;
 
+    std::cout << n << std::endl;
     return 0;
 }

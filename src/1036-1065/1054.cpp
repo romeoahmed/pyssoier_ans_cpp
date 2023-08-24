@@ -9,6 +9,7 @@ int main(int argc, char const *argv[])
 {
     auto m = 0, n = 0;
     std::cin >> m >> n;
+    
     for (int i = std::min(m, n); i > 0; i--)
     {
         if (m % i == 0 && n % i == 0)

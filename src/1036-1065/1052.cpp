@@ -7,7 +7,7 @@
 #include <iostream>
 #include <iomanip>
 
-constexpr auto calcPi(int n)
+constexpr auto calcPi(const int n)
 {
     auto pi = 0.0;
     for (auto i = 1; i <= n; i++)

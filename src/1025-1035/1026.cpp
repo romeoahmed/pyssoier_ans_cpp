@@ -9,6 +9,7 @@ int main(int argc, char const *argv[])
 {
     auto x = 0;
     std::cin >> x;
+    
     if (x % 2 == 0)
         std::cout << "x为偶数" << std::endl;
     else

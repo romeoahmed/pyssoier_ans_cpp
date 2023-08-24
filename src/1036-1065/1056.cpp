@@ -21,7 +21,7 @@ int main(int argc, char const *argv[])
         tmp = tenDight * 1992 + carry;
         tenDight = tmp % 10;
     }
-    std::cout << tenDight << unitDigit << std::endl;
 
+    std::cout << tenDight << unitDigit << std::endl;
     return 0;
 }

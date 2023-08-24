@@ -9,6 +9,7 @@ int main(int argc, char const *argv[])
 {
     auto t = 0;
     std::cin >> t;
+    
     const auto v = 25000 / t * 3.6;
     if (v > 100)
         std::cout << "超速" << std::endl;

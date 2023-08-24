@@ -11,6 +11,7 @@ int main(int argc, char const *argv[])
 {
     double height = 0, weight = 0;
     std::cin >> height >> weight;
+    
     const auto bmi = weight / (height * height);
     std::string status;
     if (bmi < 18.5)

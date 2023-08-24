@@ -13,9 +13,10 @@ int main(int argc, char const *argv[])
 {
     std::vector<int> nums;
     auto n = 0;
+    
     while (std::cin >> n)
     {
-        nums.push_back(n);
+        nums.emplace_back(n);
         if (std::cin.get() == '\n')
         {
             break;
