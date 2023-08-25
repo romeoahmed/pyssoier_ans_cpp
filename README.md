@@ -4,7 +4,6 @@
 [![GitHub forks](https://img.shields.io/github/forks/romeoahmed/pyssoier_answer_cpp)](https://github.com/romeoahmed/pyssoier_answer_py/forks)
 [![GitHub issues](https://img.shields.io/github/issues/romeoahmed/pyssoier_answer_cpp)](https://github.com/romeoahmed/pyssoier_answer_py/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/romeoahmed/pyssoier_answer_cpp)](https://github.com/romeoahmed/pyssoier_answer_py/pulls)
-[![GitHub contributors](https://img.shields.io/github/contributors/romeoahmed/pyssoier_answer_cpp)](https://github.com/romeoahmed/pyssoier_answer_cpp/graphs/contributors)
 
 ## Introduction
 Some answers to questions from [pyssoier](http://py.ssoier.cn:7077/) written in **C++**.  
