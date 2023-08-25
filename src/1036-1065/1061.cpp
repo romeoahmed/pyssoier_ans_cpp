@@ -14,7 +14,7 @@ int main(int argc, char const *argv[])
             for (auto k = 0; k <= 100; k++)
             {
                 if (i + j + k == 100 && i * 5 + j * 3 + k / 3 == 100 && k % 3 == 0)
-                    std::cout << i << " " << j << " " << k << std::endl;
+                    std::cout << i << ' ' << j << ' ' << k << std::endl;
             }
         }
     }

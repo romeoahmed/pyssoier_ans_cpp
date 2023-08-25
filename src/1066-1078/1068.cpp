@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
     }
 
     for (auto iter = nums.crbegin(); iter != nums.crend(); ++iter)
-        std::cout << *iter << " ";
+        std::cout << *iter << ' ';
     
     std::cout << std::endl;
     return 0;

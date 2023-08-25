@@ -17,8 +17,8 @@ int main(int argc, char const *argv[])
     const auto area = pi * radius * radius;
     
     std::cout << std::fixed << std::setprecision(4)
-              << diameter << " "
-              << circumference << " "
+              << diameter << ' '
+              << circumference << ' '
               << area << std::endl;
 
     return 0;

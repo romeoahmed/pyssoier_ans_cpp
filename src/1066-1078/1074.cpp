@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
     for (std::size_t i = 0; i < n; i++)
     {
         if (rooms.at(i) == 1)
-            std::cout << i + 1 << " ";
+            std::cout << i + 1 << ' ';
     }
     std::cout << std::endl;
 

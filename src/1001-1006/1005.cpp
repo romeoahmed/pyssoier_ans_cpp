@@ -10,6 +10,6 @@ int main(int argc, char const *argv[])
     auto x = 0;
     std::cin >> x;
 
-    std::cout << x << " " << x * 10 << std::endl;
+    std::cout << x << ' ' << x * 10 << std::endl;
     return 0;
 }

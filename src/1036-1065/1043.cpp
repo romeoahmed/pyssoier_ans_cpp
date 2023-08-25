@@ -22,6 +22,6 @@ int main(int argc, char const *argv[])
         }
     }
 
-    std::cout << evenSum << " " << oddSum << std::endl;
+    std::cout << evenSum << ' ' << oddSum << std::endl;
     return 0;
 }

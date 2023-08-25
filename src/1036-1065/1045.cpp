@@ -23,8 +23,8 @@ int main(int argc, char const *argv[])
     const auto maxNum = *std::max_element(nums.cbegin(), nums.cend());
     const auto average = std::accumulate(nums.cbegin(), nums.cend(), 0.0) / nums.size();
 
-    std::cout << minNum << " "
-              << maxNum << " "
+    std::cout << minNum << ' '
+              << maxNum << ' '
               << std::fixed << std::setprecision(3) << average << std::endl;
 
     return 0;

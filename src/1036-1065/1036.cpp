@@ -9,7 +9,7 @@ int main(int argc, char const *argv[])
 {
     for (auto i = 0; i < 10; i++)
     {
-        std::cout << i << " ";
+        std::cout << i << ' ';
     }
     std::cout << std::endl;
 

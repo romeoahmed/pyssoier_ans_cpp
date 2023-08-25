@@ -11,7 +11,7 @@ int main(int argc, char const *argv[])
     std::cin >> c;
     
     std::cout << "  " << c << std::endl;
-    std::cout << " " << c << c << c << std::endl;
+    std::cout << ' ' << c << c << c << std::endl;
     std::cout << c << c << c << c << c << std::endl;
 
     return 0;

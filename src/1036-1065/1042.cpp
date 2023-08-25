@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
     
     for (auto i = 2; i <= n; i += 2)
     {
-        std::cout << i << " ";
+        std::cout << i << ' ';
     }
     std::cout << std::endl;
 

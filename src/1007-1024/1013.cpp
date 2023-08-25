@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
 
     const auto chicken = chicken_rabbit(x, y);
     const auto rabbit = x - chicken;
-    std::cout << chicken << " " << rabbit << std::endl;
+    std::cout << chicken << ' ' << rabbit << std::endl;
 
     return 0;
 }

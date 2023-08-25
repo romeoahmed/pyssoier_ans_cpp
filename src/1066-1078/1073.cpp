@@ -23,7 +23,7 @@ int main(int argc, char const *argv[])
     nums.pop_front();
 
     for (auto iter = nums.cbegin(); iter != nums.cend(); ++iter)
-        std::cout << *iter << " ";
+        std::cout << *iter << ' ';
     std::cout << std::endl;
 
     return 0;
