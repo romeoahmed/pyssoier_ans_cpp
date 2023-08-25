@@ -5,14 +5,9 @@
 
 #include <iostream>
 
-auto fact(const int n, const long long a = 1)
+long long fact(const int n, const long long a = 1LL)
 {
-    if (n == 0)
-        return 1LL;
-    else if (n == 1)
-        return a;
-    else
-        return fact(n - 1, a * n);
+    return (n == 0) ? a : fact(n - 1, a * n);
 }
 
 int main(int argc, char const *argv[])
