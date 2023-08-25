@@ -1,4 +1,5 @@
-# pyssoier_answer_cpp
+# Pyssoier Answer - C++ Edition
+## Introduction
 Some answers to questions from [pyssoier](http://py.ssoier.cn:7077/) written in **C++**.  
 You can get the source code in the **src** folder.   
 - [1001-1006](https://github.com/romeoahmed/pyssoier_answer_cpp/tree/main/src/1001-1006)
@@ -17,4 +18,6 @@ You can get the source code in the **src** folder.
 
 - [1094-1108](https://github.com/romeoahmed/pyssoier_answer_cpp/tree/main/src/1094-1108)
   
-This project is licensed under the terms of the **MIT** license.
+## License
+This project is licensed under the **MIT** license.  
+See [LICENSE](https://github.com/romeoahmed/pyssoier_answer_cpp/tree/main/LICENSE) file for full information.
