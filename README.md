@@ -27,4 +27,4 @@ You can get the source code in the **src** folder.
   
 ## License
 This project is licensed under the **MIT** license.  
-See [LICENSE](https://github.com/romeoahmed/pyssoier_answer_cpp/tree/main/LICENSE) file for full information.
+See the [LICENSE](https://github.com/romeoahmed/pyssoier_answer_cpp/tree/main/LICENSE) file for details.
