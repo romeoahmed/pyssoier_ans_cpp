@@ -24,13 +24,11 @@ int main(int argc, char const *argv[])
     for (std::size_t j = 0; j < nums.size() - 1; ++j)
     {
         flag = false;
-        for (auto iter = nums.begin(); iter != nums.end() - 1; ++iter)
+        for (auto iter = nums.begin(); iter != nums.end() - j - 1; ++iter)
         {
             if (*iter < *(iter + 1))
             {
-                auto temp = *iter;
-                *iter = *(iter + 1);
-                *(iter + 1) = temp;
+                std::swap(*iter, *(iter + 1));
                 flag = true;
             }
         }

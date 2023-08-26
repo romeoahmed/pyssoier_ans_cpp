@@ -3,7 +3,6 @@
  * Licensed under the MIT license. See LICENSE file in the project root for license information.
  */
 
-#include <cmath>
 #include <iostream>
 #include <vector>
 
@@ -13,11 +12,13 @@ auto isPrimeNum(const int n)
         return true;
     else if (n % 6 != 1 && n % 6 != 5)
         return false;
-    for (auto i = 5; i <= std::sqrt(n); i += 6)
-        if (n % i == 0 || n % (i + 2) == 0)
-            return false;
-    return true;
-
+    else
+    {
+        for (auto i = 5; i * i <= n; i += 6)
+            if (n % i == 0 || n % (i + 2) == 0)
+                return false;
+        return true;
+    }
 }
 
 int main(int argc, char const *argv[])

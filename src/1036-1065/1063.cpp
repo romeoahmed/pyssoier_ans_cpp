@@ -3,19 +3,21 @@
  * Licensed under the MIT license. See LICENSE file in the project root for license information.
  */
 
-#include <cmath>
 #include <iostream>
 
-auto isPrime(const int n)
+auto isPrimeNum(const int n)
 {
     if (n == 2 || n == 3)
         return true;
     else if (n % 6 != 1 && n % 6 != 5)
         return false;
-    for (int i = 5; i <= std::sqrt(n); i += 6)
-        if (n % i == 0 || n % (i + 2) == 0)
-            return false;
-    return true;
+    else
+    {
+        for (auto i = 5; i * i <= n; i += 6)
+            if (n % i == 0 || n % (i + 2) == 0)
+                return false;
+        return true;
+    }
 }
 
 int main(int argc, char const *argv[])
@@ -24,7 +26,7 @@ int main(int argc, char const *argv[])
     std::cin >> a >> b;
     
     for (int i = a; i <= b; i++)
-        if (isPrime(i))
+        if (isPrimeNum(i))
             std::cout << i << std::endl;
     
     return 0;

@@ -3,6 +3,7 @@
  * Licensed under the MIT license. See LICENSE file in the project root for license information.
  */
 
+#include <algorithm>
 #include <iostream>
 
 int getGCD(const int m, const int n)
