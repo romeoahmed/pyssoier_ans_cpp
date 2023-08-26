@@ -21,8 +21,8 @@ auto isSubStr(const std::string &subStr, const std::string &originStr)
 int main(int argc, char const *argv[])
 {
     std::string s1, s2;
-    getline(std::cin, s1);
-    getline(std::cin, s2);
+    std::getline(std::cin, s1);
+    std::getline(std::cin, s2);
     
     if (isSubStr(s1, s2))
         std::cout << s1 << " is substring of " << s2 << std::endl;
