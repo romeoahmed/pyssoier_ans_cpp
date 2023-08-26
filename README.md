@@ -23,6 +23,8 @@ You can get the source code in the **src** folder.
 - [1079-1093](https://github.com/romeoahmed/pyssoier_ans_cpp/tree/main/src/1079-1093)
 
 - [1094-1108](https://github.com/romeoahmed/pyssoier_ans_cpp/tree/main/src/1094-1108)
+    > [1095.cpp](https://github.com/romeoahmed/pyssoier_ans_cpp/tree/main/src/1094-1108/1095.cpp) may get wrong result s when the input contains non-ASCII characters.  
+    > You can try to modify the code to support wide characters.
   
 ## License
 This project is licensed under the **MIT** license.  
