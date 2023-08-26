@@ -10,20 +10,22 @@
 #include <string_view>
 #include <vector>
 
-constexpr std::array<std::string_view, 3> winCombinations = {
-    "Rock Scissors",
-    "Scissors Paper",
-    "Paper Rock"
-};
 
-constexpr std::array<std::string_view, 3> tieCombinations = {
-    "Rock Rock",
-    "Scissors Scissors",
-    "Paper Paper"
-};
 
 int main(int argc, char const *argv[])
 {
+    constexpr std::array<std::string_view, 3> winCombinations = {
+        "Rock Scissors",
+        "Scissors Paper",
+        "Paper Rock"
+    };
+
+    constexpr std::array<std::string_view, 3> tieCombinations = {
+        "Rock Rock",
+        "Scissors Scissors",
+        "Paper Paper"
+    };
+
     std::vector<std::string_view> results;
     auto n = 0;
     std::cin >> n;
