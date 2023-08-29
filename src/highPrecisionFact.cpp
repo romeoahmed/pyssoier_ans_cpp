@@ -8,8 +8,9 @@
 
 int main(int argc, char const *argv[])
 {
-    constexpr int n = 100;
+    constexpr int n = 500;
     std::vector<int> result;
+    result.reserve(10000);
     result.emplace_back(1);
     for (auto i = 2; i <= n; ++i)
     {
