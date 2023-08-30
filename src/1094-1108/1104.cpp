@@ -8,7 +8,7 @@
 #include <string>
 #include <string_view>
 
-constexpr std::array<std::string_view, 32> cReservedWords = {
+constexpr std::array<std::string_view, 32> cReservedWords {
     "auto", "break", "case", "char",
     "const", "continue", "default", "do",
     "double", "else", "enum", "extern",

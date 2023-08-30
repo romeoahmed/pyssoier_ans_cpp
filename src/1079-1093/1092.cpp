@@ -47,7 +47,7 @@ inline auto getAmiableNums(std::array<int, 2> &amiableNums)
 
 int main(int argc, char const *argv[])
 {
-    std::array<int, 2> amiableNums{};
+    std::array<int, 2> amiableNums {};
 
     getAmiableNums(amiableNums);
     for (auto num: amiableNums)

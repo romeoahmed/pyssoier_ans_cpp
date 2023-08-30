@@ -9,7 +9,7 @@
 
 int main(int argc, char const *argv[])
 {
-    constexpr std::array<std::string_view, 2> words = {"hello", "world"};
+    constexpr std::array<std::string_view, 2> words {"hello", "world"};
     for (auto word : words) {
         std::cout << word << std::endl;
     }

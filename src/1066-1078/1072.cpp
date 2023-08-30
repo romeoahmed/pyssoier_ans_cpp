@@ -9,7 +9,7 @@
 
 int main(int argc, char const *argv[])
 {
-    std::array<std::string_view, 5> hobbies = {"篮球", "羽毛球", "看书", "旅游", "音乐"};
+    std::array<std::string_view, 5> hobbies {"篮球", "羽毛球", "看书", "旅游", "音乐"};
     
     for (auto hobby : hobbies)
         std::cout << hobby << std::endl;

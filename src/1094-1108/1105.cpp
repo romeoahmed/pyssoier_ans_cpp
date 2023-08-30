@@ -9,7 +9,7 @@
 
 int main(int argc, char const *argv[])
 {
-    std::map<char, char> dnaRule{
+    std::map<char, char> dnaRule {
         {'A', 'T'},
         {'T', 'A'},
         {'C', 'G'},

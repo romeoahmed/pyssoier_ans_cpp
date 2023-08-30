@@ -9,7 +9,7 @@
 
 int main(int argc, char const *argv[])
 {
-    constexpr std::array<std::string_view, 4> names = {"张明", "王丽", "李刚", "唐华"};
+    constexpr std::array<std::string_view, 4> names {"张明", "王丽", "李刚", "唐华"};
     for (auto name : names) {
         std::cout << name << std::endl;
     }

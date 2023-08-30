@@ -9,7 +9,7 @@
 
 int main(int argc, char const *argv[])
 {
-    constexpr std::array<double, 5> rates = {0.0325, 0.03, 0.03, 0.02, 0.0175};
+    constexpr std::array<double, 5> rates {0.0325, 0.03, 0.03, 0.02, 0.0175};
     auto money = 0.0;
     std::cin >> money;
 

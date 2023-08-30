@@ -8,7 +8,7 @@
 
 int main(int argc, char const *argv[])
 {
-    constexpr std::array<int, 10> matches = {6, 2, 5, 5, 4, 5, 6, 3, 7, 6};
+    constexpr std::array<int, 10> matches {6, 2, 5, 5, 4, 5, 6, 3, 7, 6};
     
     for (int i = 0; i <= 111; i++)
     {

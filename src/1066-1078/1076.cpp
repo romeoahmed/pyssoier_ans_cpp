@@ -9,7 +9,7 @@
 
 int main(int argc, char const *argv[])
 {
-    constexpr std::array<int, 6> heats = {95, 100, 122, 180, 245, 221};
+    constexpr std::array<int, 6> heats {95, 100, 122, 180, 245, 221};
     
     std::cout << std::accumulate(heats.cbegin(), heats.cend(), 0) << std::endl;
     return 0;

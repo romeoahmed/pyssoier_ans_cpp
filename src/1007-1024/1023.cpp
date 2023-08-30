@@ -11,7 +11,7 @@ int main(int argc, char const *argv[])
 {
     constexpr auto length = 5;
     
-    std::array<int, length> candies{};
+    std::array<int, length> candies {};
     for (auto &candy : candies)
         std::cin >> candy;
     

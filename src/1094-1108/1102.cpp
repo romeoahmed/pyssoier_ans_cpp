@@ -14,13 +14,13 @@
 
 int main(int argc, char const *argv[])
 {
-    constexpr std::array<std::string_view, 3> winCombinations = {
+    constexpr std::array<std::string_view, 3> winCombinations {
         "Rock Scissors",
         "Scissors Paper",
         "Paper Rock"
     };
 
-    constexpr std::array<std::string_view, 3> tieCombinations = {
+    constexpr std::array<std::string_view, 3> tieCombinations {
         "Rock Rock",
         "Scissors Scissors",
         "Paper Paper"
