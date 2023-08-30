@@ -7,7 +7,7 @@
 
 int getGCD(const int m, const int n)
 {
-    return (n == 0) ? m : getGCD(std::min(m, n), std::max(m, n) % std::min(m, n));
+    return (n == 0) ? m : getGCD(n, m % n);
 }
 
 int main(int argc, char const *argv[])

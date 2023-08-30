@@ -8,7 +8,7 @@
 
 int getGCD(const int m, const int n)
 {
-    return (n == 0) ? m : getGCD(std::min(m, n), std::max(m, n) % std::min(m, n));
+    return (n == 0) ? m : getGCD(n, m % n);
 }
 
 inline auto getLCM(const int m, const int n)
