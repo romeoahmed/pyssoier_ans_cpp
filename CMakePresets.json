@@ -1,39 +1,33 @@
 {
-  "version": 3,
+  "version": 10,
+  "$schema": "https://cmake.org/cmake/help/latest/_downloads/3e2d73bff478d88a7de0de736ba5e361/schema.json",
   "configurePresets": [
     {
-      "name": "base",
-      "hidden": true,
-      "generator": "Ninja",
-      "binaryDir": "${sourceDir}/build/${presetName}",
+      "name": "Base",
+      "generator": "Ninja Multi-Config",
+      "binaryDir": "${sourceDir}/build",
       "cacheVariables": {
         "CMAKE_CXX_COMPILER": "clang++",
-        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
-      }
-    },
-    {
-      "name": "Debug",
-      "inherits": "base",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Debug"
-      }
-    },
-    {
-      "name": "Release",
-      "inherits": "base",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Release"
+        "CMAKE_LINKER_TYPE": "LLD",
+        "CMAKE_AR": "llvm-ar",
+        "CMAKE_RANLIB": "llvm-ranlib",
+        "CMAKE_CXX_EXTENSIONS": "OFF",
+        "CMAKE_CXX_STANDARD_REQUIRED": "ON",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+        "CMAKE_CONFIGURATION_TYPES": "Debug;Release"
       }
     }
   ],
   "buildPresets": [
     {
       "name": "Debug",
-      "configurePreset": "Debug"
+      "configurePreset": "Base",
+      "configuration": "Debug"
     },
     {
       "name": "Release",
-      "configurePreset": "Release"
+      "configurePreset": "Base",
+      "configuration": "Release"
     }
   ]
 }

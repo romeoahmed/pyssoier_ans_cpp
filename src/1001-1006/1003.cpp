@@ -1,17 +1,16 @@
 /*
  * Copyright (c) 2023 Romeo Ahmed. All rights reserved.
- * Licensed under the MIT license. See LICENSE file in the project root for license information.
+ * Licensed under the MIT license. See LICENSE file in the project root for
+ * license information.
  */
 
 import std;
 
-int main()
-{
+auto main() -> int {
     std::ios::sync_with_stdio(false);
     std::cin.tie(nullptr);
 
-    if (double f{}; std::cin >> f)
-    {
+    if (double f{}; std::cin >> f) {
         const auto c = (f - 32) * 5.0 / 9.0;
         std::println("{:.2f}", c);
     }

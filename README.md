@@ -18,17 +18,19 @@ You can get the source code in the **src** folder.
 - [1025-1035](https://github.com/romeoahmed/pyssoier_ans_cpp/tree/main/src/1025-1035)
 
 - [1036-1065](https://github.com/romeoahmed/pyssoier_ans_cpp/tree/main/src/1036-1065)
-    > [1048.cpp](https://github.com/romeoahmed/pyssoier_ans_cpp/tree/main/src/1036-1065/1048.cpp) works fine on my computer, but on pyssoier it shows **Wrong Answer**.  
-    > If you know why, please tell me. Thanks.
+  > [1048.cpp](https://github.com/romeoahmed/pyssoier_ans_cpp/tree/main/src/1036-1065/1048.cpp) works fine on my
+  computer, but on pyssoier it shows **Wrong Answer**.  
+  > If you know why, please tell me. Thanks.
 
 - [1066-1078](https://github.com/romeoahmed/pyssoier_ans_cpp/tree/main/src/1066-1078)
 
 - [1079-1093](https://github.com/romeoahmed/pyssoier_ans_cpp/tree/main/src/1079-1093)
 
 - [1094-1108](https://github.com/romeoahmed/pyssoier_ans_cpp/tree/main/src/1094-1108)
-    > [1095.cpp](https://github.com/romeoahmed/pyssoier_ans_cpp/tree/main/src/1094-1108/1095.cpp) may get wrong result s when the input contains non-ASCII characters.  
-    > You can try to modify the code to support wide characters.
-  
+  > [1095.cpp](https://github.com/romeoahmed/pyssoier_ans_cpp/tree/main/src/1094-1108/1095.cpp) may get wrong result s
+  when the input contains non-ASCII characters.  
+  > You can try to modify the code to support wide characters.
+
 ## License
 
 This project is licensed under the **MIT** license.  

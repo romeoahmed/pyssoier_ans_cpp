@@ -4,46 +4,63 @@ set(CMAKE_EXPERIMENTAL_CXX_IMPORT_STD "d0edc3af-4c50-42ea-a356-e2862fe7a444")
 
 project(pyssoier_ans_cpp LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 23)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS OFF)
-set(CMAKE_INTERPROCEDURAL_OPTIMIZATION ON)
+add_library(hardcore_settings INTERFACE)
 
-set(CMAKE_CXX_MODULE_STD ON)
+target_compile_features(hardcore_settings INTERFACE cxx_std_23)
 
-if (MSVC)
-    add_compile_options(/W4 /WX)
-else ()
-    add_compile_options(
-            -Wall -Wextra -Wpedantic -Werror
-            -Wshadow
-            -Wold-style-cast
-            -Wunused
-            -Wconversion
-            -Wsign-conversion
-            -Wnull-dereference
-            -Wdouble-promotion
-            -Wformat=2
-            -Wimplicit-fallthrough
-            -Wmisleading-indentation
-            -Wnon-virtual-dtor
-            -Woverloaded-virtual
-    )
-endif ()
+string(CONCAT IS_CLANG_OR_GCC "$<OR:" "$<CXX_COMPILER_ID:Clang>,"
+        "$<CXX_COMPILER_ID:AppleClang>," "$<CXX_COMPILER_ID:GNU>" ">")
 
-file(GLOB_RECURSE ALL_SOURCES "src/**/*.cpp")
+target_compile_options(
+        hardcore_settings
+        INTERFACE # MSVC
+        $<$<CXX_COMPILER_ID:MSVC>:/W4
+        /WX
+        >
+        # Clang/GCC
+        $<$<BOOL:${IS_CLANG_OR_GCC}>:
+        -Wall
+        -Wextra
+        -Wpedantic
+        -Werror
+        -Wshadow
+        -Wold-style-cast
+        -Wunused
+        -Wconversion
+        -Wsign-conversion
+        -Wnull-dereference
+        -Wdouble-promotion
+        -Wformat=2
+        -Wimplicit-fallthrough
+        >)
 
-foreach (SRC ${ALL_SOURCES})
-    cmake_path(GET SRC STEM EXE_NAME)
+set(LLVM_COMMON_FLAGS -stdlib=libc++ -flto=thin)
 
-    add_executable(${EXE_NAME} ${SRC})
+set(LLVM_LINK_ONLY_FLAGS -rtlib=compiler-rt)
 
-    set_target_properties(${EXE_NAME} PROPERTIES
-            CXX_SCAN_FOR_MODULES ON
-    )
+target_compile_options(
+        hardcore_settings
+        INTERFACE $<$<CXX_COMPILER_ID:Clang,AppleClang>:${LLVM_COMMON_FLAGS}>)
 
-    if (CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-        target_compile_options(${EXE_NAME} PRIVATE -stdlib=libc++)
-        target_link_options(${EXE_NAME} PRIVATE -stdlib=libc++)
-    endif ()
+target_link_options(
+        hardcore_settings INTERFACE
+        $<$<CXX_COMPILER_ID:Clang,AppleClang>:${LLVM_COMMON_FLAGS}
+        ${LLVM_LINK_ONLY_FLAGS}>)
+
+file(GLOB_RECURSE ALL_SOURCES CONFIGURE_DEPENDS "src/**/*.cpp")
+
+foreach (src_file ${ALL_SOURCES})
+    cmake_path(GET src_file STEM exe_name)
+
+    add_executable(${exe_name} ${src_file})
+
+    target_link_libraries(${exe_name} PRIVATE hardcore_settings)
+
+    set_target_properties(
+            ${exe_name}
+            PROPERTIES CXX_STANDARD_REQUIRED ON
+            CXX_STANDARD 23
+            CXX_EXTENSIONS OFF
+            CXX_MODULE_STD ON
+            CXX_SCAN_FOR_MODULES ON)
 endforeach ()
