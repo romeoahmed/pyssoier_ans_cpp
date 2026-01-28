@@ -3,13 +3,15 @@
  * Licensed under the MIT license. See LICENSE file in the project root for license information.
  */
 
-#include <iostream>
+import std;
 
-int main(int argc, char const *argv[])
+int main()
 {
-    auto x = 0;
-    std::cin >> x;
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
 
-    std::cout << x << ' ' << x * 10 << std::endl;
-    return 0;
+    if (int x{}; std::cin >> x)
+    {
+        std::println("{} {}", x, x * 10);
+    }
 }

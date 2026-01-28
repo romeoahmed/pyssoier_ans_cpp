@@ -3,10 +3,12 @@
  * Licensed under the MIT license. See LICENSE file in the project root for license information.
  */
 
-#include <iostream>
+import std;
 
-int main(int argc, char const *argv[])
+int main()
 {
-    std::cout << "Hello Python" << std::endl;
-    return 0;
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
+
+    std::println("Hello Python");
 }

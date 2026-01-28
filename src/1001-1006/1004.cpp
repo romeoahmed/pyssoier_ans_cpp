@@ -3,16 +3,24 @@
  * Licensed under the MIT license. See LICENSE file in the project root for license information.
  */
 
-#include <iostream>
+import std;
 
-int main(int argc, char const *argv[])
+int main()
 {
-    char c = 0;
-    std::cin >> c;
-    
-    std::cout << "  " << c << std::endl;
-    std::cout << ' ' << c << c << c << std::endl;
-    std::cout << c << c << c << c << c << std::endl;
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
 
-    return 0;
+    if (char c{}; std::cin >> c)
+    {
+        auto pyramid = std::ranges::views::iota(1u, 4u)
+            | std::ranges::views::transform([c](auto i)
+            {
+                return std::format("{}{}", std::string(3 - i, ' '), std::string(2 * i - 1, c));
+            });
+
+        for (const auto& line : pyramid)
+        {
+            std::println("{}", line);
+        }
+    }
 }

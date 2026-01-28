@@ -33,4 +33,18 @@
 
 # Visual Studio Code
 .vscode/
+
+# clangd
+.cache/
+
+# direnv
 .direnv/
+
+# Build
+build/
+
+# JetBrains
+.idea/
+
+# CMake
+compile_commands.json

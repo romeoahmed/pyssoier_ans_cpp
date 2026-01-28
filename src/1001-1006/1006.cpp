@@ -3,15 +3,16 @@
  * Licensed under the MIT license. See LICENSE file in the project root for license information.
  */
 
-#include <iostream>
-#include <iomanip>
+import std;
 
-int main(int argc, char const *argv[])
+int main()
 {
-    constexpr auto a = 15, b = 25;
-    constexpr auto h = 150 * 2 / a;
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
+
+    constexpr double a{15.0}, b{25.0};
+    constexpr double h = 150.0 * 2.0 / a;
     constexpr double s = (a + b) * h / 2;
 
-    std::cout << std::fixed << std::setprecision(2) << s << std::endl;
-    return 0;
+    std::println("{:.2f}", s);
 }
