@@ -1,13 +1,13 @@
 /*
  * Copyright (c) 2023 Romeo Ahmed. All rights reserved.
- * Licensed under the MIT license. See LICENSE file in the project root for license information.
+ * Licensed under the MIT license. See LICENSE file in the project root for
+ * license information.
  */
 
 #include <iostream>
 #include <string>
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const* argv[]) {
     auto threshold = 0.0;
     std::string dna1, dna2;
     std::cin >> threshold >> dna1 >> dna2;

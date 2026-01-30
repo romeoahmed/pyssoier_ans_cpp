@@ -11,13 +11,12 @@ auto main() -> int {
     std::cin.tie(nullptr);
 
     if (char c{}; std::cin >> c) {
-        auto pyramid = std::ranges::views::iota(1u, 4u) |
-                       std::ranges::views::transform([c](auto i) {
-                           return std::format("{}{}", std::string(3 - i, ' '),
-                                              std::string(2 * i - 1, c));
-                       });
+        auto pyramid =
+            std::ranges::views::iota(1u, 4u) | std::ranges::views::transform([c](auto i) {
+                return std::format("{}{}", std::string(3 - i, ' '), std::string(2 * i - 1, c));
+            });
 
-        for (const auto &line : pyramid) {
+        for (auto const& line : pyramid) {
             std::println("{}", line);
         }
     }

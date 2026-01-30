@@ -11,7 +11,7 @@ auto main() -> int {
     std::cin.tie(nullptr);
 
     if (double f{}; std::cin >> f) {
-        const auto c = (f - 32) * 5.0 / 9.0;
+        auto const c = (f - 32) * 5.0 / 9.0;
         std::println("{:.2f}", c);
     }
 }

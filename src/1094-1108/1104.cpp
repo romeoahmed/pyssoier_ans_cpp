@@ -1,6 +1,7 @@
 /*
  * Copyright (c) 2023 Romeo Ahmed. All rights reserved.
- * Licensed under the MIT license. See LICENSE file in the project root for license information.
+ * Licensed under the MIT license. See LICENSE file in the project root for
+ * license information.
  */
 
 #include <array>
@@ -8,38 +9,30 @@
 #include <string>
 #include <string_view>
 
-constexpr std::array<std::string_view, 32> cReservedWords {
-    "auto", "break", "case", "char",
-    "const", "continue", "default", "do",
-    "double", "else", "enum", "extern",
-    "float", "for", "goto", "if",
-    "int", "long", "register", "return",
-    "short", "signed", "sizeof", "static",
-    "struct", "switch", "typedef", "union",
-    "unsigned", "void", "volatile", "while"
-};
+constexpr std::array<std::string_view, 32> cReservedWords{
+    "auto",   "break",  "case",     "char",   "const",    "continue", "default",  "do",
+    "double", "else",   "enum",     "extern", "float",    "for",      "goto",     "if",
+    "int",    "long",   "register", "return", "short",    "signed",   "sizeof",   "static",
+    "struct", "switch", "typedef",  "union",  "unsigned", "void",     "volatile", "while"};
 
-auto isLegitID(const std::string &cID)
-{
+auto isLegitID(std::string const& cID) {
     for (auto word : cReservedWords)
         if (cID == word)
             return false;
-    
+
     if (cID.at(0) >= '0' && cID.at(0) <= '9')
         return false;
-    
-    for (auto c : cID)
-    {
+
+    for (auto c : cID) {
         if (c == '_' || (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))
             continue;
         return false;
     }
-    
+
     return true;
 }
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const* argv[]) {
     std::string cID;
     std::getline(std::cin, cID);
 

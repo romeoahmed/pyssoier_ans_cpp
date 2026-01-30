@@ -1,18 +1,17 @@
 /*
  * Copyright (c) 2023 Romeo Ahmed. All rights reserved.
- * Licensed under the MIT license. See LICENSE file in the project root for license information.
+ * Licensed under the MIT license. See LICENSE file in the project root for
+ * license information.
  */
 
-#include <iostream>
-#include <iomanip>
+import std;
 
-int main(int argc, char const *argv[])
-{
-    auto n = 0, m = 0;
-    std::cin >> n >> m;
-    
-    const auto rest = n - m * 0.8;
-    std::cout << std::fixed << std::setprecision(2) << rest << std::endl;
+auto main() -> int {
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
 
-    return 0;
+    if (double n{}, m{}; std::cin >> n >> m) {
+        double const rest = n - m * 0.8;
+        std::println("{:.2f}", rest);
+    }
 }

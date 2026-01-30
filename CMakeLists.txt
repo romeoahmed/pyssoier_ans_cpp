@@ -59,7 +59,7 @@ foreach (src_file ${ALL_SOURCES})
     set_target_properties(
             ${exe_name}
             PROPERTIES CXX_STANDARD_REQUIRED ON
-            CXX_STANDARD 23
+            CXX_STANDARD 26
             CXX_EXTENSIONS OFF
             CXX_MODULE_STD ON
             CXX_SCAN_FOR_MODULES ON)

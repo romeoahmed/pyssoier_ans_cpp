@@ -1,13 +1,13 @@
 /*
  * Copyright (c) 2023 Romeo Ahmed. All rights reserved.
- * Licensed under the MIT license. See LICENSE file in the project root for license information.
+ * Licensed under the MIT license. See LICENSE file in the project root for
+ * license information.
  */
 
 #include <iostream>
 #include <string>
 
-auto isSubStr(const std::string &subStr, const std::string &originStr)
-{
+auto isSubStr(std::string const& subStr, std::string const& originStr) {
     if (subStr.size() > originStr.size())
         return false;
     else if (subStr.size() == originStr.size())
@@ -18,12 +18,11 @@ auto isSubStr(const std::string &subStr, const std::string &originStr)
         return false;
 }
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const* argv[]) {
     std::string s1, s2;
     std::getline(std::cin, s1);
     std::getline(std::cin, s2);
-    
+
     if (isSubStr(s1, s2))
         std::cout << s1 << " is substring of " << s2 << std::endl;
     else if (isSubStr(s2, s1))

@@ -1,25 +1,22 @@
 /*
  * Copyright (c) 2023 Romeo Ahmed. All rights reserved.
- * Licensed under the MIT license. See LICENSE file in the project root for license information.
+ * Licensed under the MIT license. See LICENSE file in the project root for
+ * license information.
  */
 
-#include <iostream>
-#include <iomanip>
+import std;
 
-int main(int argc, char const *argv[])
-{
-    constexpr auto pi = 3.14159;
-    double radius = 0;
-    std::cin >> radius;
+auto main() -> int {
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
 
-    const auto diameter = 2 * radius;
-    const auto circumference = 2 * pi * radius;
-    const auto area = pi * radius * radius;
-    
-    std::cout << std::fixed << std::setprecision(4)
-              << diameter << ' '
-              << circumference << ' '
-              << area << std::endl;
+    if (double radius{}; std::cin >> radius) {
+        constexpr double pi = 3.14159;
 
-    return 0;
+        double const diameter = 2 * radius;
+        double const circumference = 2 * pi * radius;
+        double const area = pi * radius * radius;
+
+        std::println("{:.4f} {:.4f} {:.4f}", diameter, circumference, area);
+    }
 }

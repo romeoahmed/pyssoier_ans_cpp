@@ -1,0 +1,8 @@
+Checks: >
+  -*,
+  modernize-*,
+  performance-*,
+  bugprone-*,
+  cppcoreguidelines-*,
+  -cppcoreguidelines-owning-memory
+  readability-const-return-type

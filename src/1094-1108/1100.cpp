@@ -1,22 +1,21 @@
 /*
  * Copyright (c) 2023 Romeo Ahmed. All rights reserved.
- * Licensed under the MIT license. See LICENSE file in the project root for license information.
+ * Licensed under the MIT license. See LICENSE file in the project root for
+ * license information.
  */
 
 #include <algorithm>
 #include <iostream>
 #include <string>
 
-auto findFirstUniqueChar(const std::string &s)
-{
+auto findFirstUniqueChar(std::string const& s) {
     for (std::size_t index = 0; index < s.size(); ++index)
         if (std::count(s.cbegin(), s.cend(), s.at(index)) == 1)
             return index;
     return s.npos;
 }
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const* argv[]) {
     std::string s;
     std::cin >> s;
 

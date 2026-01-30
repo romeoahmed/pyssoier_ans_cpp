@@ -1,26 +1,23 @@
 /*
  * Copyright (c) 2023 Romeo Ahmed. All rights reserved.
- * Licensed under the MIT license. See LICENSE file in the project root for license information.
+ * Licensed under the MIT license. See LICENSE file in the project root for
+ * license information.
  */
 
 #include <algorithm>
 #include <iostream>
 #include <string>
 
-inline auto trim(std::string &s)
-{
-    if (!s.empty())
-    {
+inline auto trim(std::string& s) {
+    if (!s.empty()) {
         std::size_t index = 0;
-        while ((index = s.find(' ', index)) != s.npos)
-        {
+        while ((index = s.find(' ', index)) != s.npos) {
             s.erase(index, 1);
         }
     }
 }
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const* argv[]) {
     std::string s1, s2;
     std::getline(std::cin, s1);
     std::getline(std::cin, s2);

@@ -1,13 +1,13 @@
 /*
  * Copyright (c) 2023 Romeo Ahmed. All rights reserved.
- * Licensed under the MIT license. See LICENSE file in the project root for license information.
+ * Licensed under the MIT license. See LICENSE file in the project root for
+ * license information.
  */
 
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const* argv[]) {
     int s = 0;
     double p = 0;
     double m = 0;
@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
         m = s * p * 0.8;
     else
         m = s * p;
-    
+
     std::cout << std::fixed << std::setprecision(1) << m << std::endl;
     return 0;
 }

@@ -1,31 +1,22 @@
 /*
  * Copyright (c) 2023 Romeo Ahmed. All rights reserved.
- * Licensed under the MIT license. See LICENSE file in the project root for license information.
+ * Licensed under the MIT license. See LICENSE file in the project root for
+ * license information.
  */
 
-#include <iostream>
+import std;
 
-/*
- * Return the number of chickens
- */
-auto chicken_rabbit(const int heads, const int legs)
-{
-    if (heads * 2 == legs)
-        return heads;
-    else if (heads * 4 == legs)
-        return 0;
-    else
-        return chicken_rabbit(heads - 1, legs - 4);
+constexpr auto chicken_rabbit(int const heads, int const legs) -> int {
+    // Return the number of chickens
+    return (4 * heads - legs) / 2;
 }
 
-int main(int argc, char const *argv[])
-{
-    auto x = 0, y = 0;
-    std::cin >> x >> y;
+auto main() -> int {
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
 
-    const auto chicken = chicken_rabbit(x, y);
-    const auto rabbit = x - chicken;
-    std::cout << chicken << ' ' << rabbit << std::endl;
-
-    return 0;
+    if (int x{}, y{}; std::cin >> x >> y) {
+        auto const chicken = chicken_rabbit(x, y);
+        std::println("{} {}", chicken, x - chicken);
+    }
 }

@@ -1,18 +1,17 @@
 /*
  * Copyright (c) 2023 Romeo Ahmed. All rights reserved.
- * Licensed under the MIT license. See LICENSE file in the project root for license information.
+ * Licensed under the MIT license. See LICENSE file in the project root for
+ * license information.
  */
 
-#include <iostream>
-#include <iomanip>
+import std;
 
-int main(int argc, char const *argv[])
-{
-    double height = 0, weight = 0;
-    std::cin >> height >> weight;
-    
-    const auto bmi = weight / (height * height);
-    std::cout << std::fixed << std::setprecision(14) << bmi << std::endl;
+auto main() -> int {
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
 
-    return 0;
+    if (double height{}, weight{}; std::cin >> height >> weight) {
+        double const bmi = weight / (height * height);
+        std::println("{:.14f}", bmi);
+    }
 }

@@ -1,18 +1,18 @@
 /*
  * Copyright (c) 2023 Romeo Ahmed. All rights reserved.
- * Licensed under the MIT license. See LICENSE file in the project root for license information.
+ * Licensed under the MIT license. See LICENSE file in the project root for
+ * license information.
  */
 
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 #include <string_view>
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const* argv[]) {
     double height = 0, weight = 0;
     std::cin >> height >> weight;
-    
-    const auto bmi = weight / (height * height);
+
+    auto const bmi = weight / (height * height);
     std::string_view status;
     if (bmi < 18.5)
         status = "偏瘦";
@@ -22,7 +22,7 @@ int main(int argc, char const *argv[])
         status = "偏胖";
     else
         status = "肥胖";
-    
+
     std::cout << std::fixed << std::setprecision(1) << bmi << std::endl;
     std::cout << status << std::endl;
 

@@ -1,15 +1,15 @@
 /*
  * Copyright (c) 2023 Romeo Ahmed. All rights reserved.
- * Licensed under the MIT license. See LICENSE file in the project root for license information.
+ * Licensed under the MIT license. See LICENSE file in the project root for
+ * license information.
  */
 
 #define _USE_MATH_DEFINES
 #include <cmath>
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const* argv[]) {
     auto radius = 0.0;
     std::cin >> radius;
 
